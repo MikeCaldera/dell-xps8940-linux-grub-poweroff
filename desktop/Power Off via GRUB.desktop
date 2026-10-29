@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Power Off via GRUB
+Comment=Reboot cleanly into GRUB to power off Dell desktop
+Exec=pkexec /usr/local/sbin/grub-poweroff-next
+Icon=system-shutdown
+Terminal=false
+Categories=System;
