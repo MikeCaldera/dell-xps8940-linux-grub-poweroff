@@ -177,3 +177,26 @@ Avoid uploading entire unredacted `journalctl` output, serial numbers, IP addres
 ### Scope of this report
 
 A **single confirmed hardware case**, with multiple controlled observations. This repository shares a reproducible workaround; it does **not** claim a universal kernel 7+ regression or provide a proven causal fix. If another user tests a different machine, please report both successes and failures.
+
+---
+
+## Official Ubuntu Kernel Bug Report
+
+**Ubuntu Launchpad Bug #2172556**
+
+https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2172556
+
+This issue has been reported against the Ubuntu `linux` kernel package.
+
+### Confirmed observations
+
+- Dell XPS 8940 running Ubuntu 26.04
+- Shutdown failure reproduced with Linux 7.0.0-14 and 7.0.0-42
+- Windows 11 powers off successfully
+- GRUB `halt` powers off the Dell successfully
+- The underlying Linux/firmware interaction remains unresolved
+
+**Status:** Reported to Ubuntu developers. Root cause not yet confirmed.
+
+If you experience similar symptoms, please contribute your hardware,
+kernel version, and test results to the Launchpad report.
